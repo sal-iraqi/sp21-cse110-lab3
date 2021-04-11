@@ -17,15 +17,15 @@
 
         <nav class="entries">
             <ul>
-                <li class="entries"><a href="#">Monday</a></li>
-                <li class="entries"><a href="#">Tuesday</a></li>
-                <li class="entries"><a href="#">Wednesday</a></li>
-                <li class="entries"><a href="#">Create an Entry</a></li>
+                <li class="entries"><a href="#mon">Monday</a></li>
+                <li class="entries"><a href="#tue">Tuesday</a></li>
+                <li class="entries"><a href="#wed">Wednesday</a></li>
+                <li class="entries"><a href="#entry">Create an Entry</a></li>
 
             </ul>
         </nav>
 
-        <section>
+        <section id="mon">
             <div><h2>Journal Entry: Monday -- 4/5/2021</h2></div>
             <h3>Summary of the Day</h3>
             <p>
@@ -69,7 +69,7 @@
             <hr>
         </section>
 
-        <section>
+        <section id="tue">
             <div><h2>Journal Entry: Tuesday -- 4/6/2021</h2></div>
             <h3>Summary of the Day</h3>
             <p>
@@ -114,7 +114,7 @@
             </figure> 
             
         
-        </section>
+        </section id="wed">
 
         <section>
             <div><h2>Journal Entry: Wednesday -- 4/7/2021</h2></div>
@@ -166,120 +166,121 @@
         </section>
 
         <hr>
+        
+        <section id="entry">
+            <h2>Create an Entry!</h2>
 
-        <h2>Create an Entry!</h2>
+            <form>
+                <label for="name">Please enter your name:</label>
 
-        <form>
-            <label for="name">Please enter your name:</label>
+                <input type="text" id="name" name="name" required
+                    minlength="1" maxlength="40">
+                <br>
+                <br>
+                <label for="day-select">Choose a day:</label>
 
-            <input type="text" id="name" name="name" required
-                minlength="1" maxlength="40">
-            <br>
-            <br>
-            <label for="day-select">Choose a day:</label>
+                <select name="days" id="day-select">
+                    <option value="">--Please choose a day--</option>
+                    <option value="Sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
 
-            <select name="days" id="day-select">
-                <option value="">--Please choose a day--</option>
-                <option value="Sunday">Sunday</option>
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-                <option value="Saturday">Saturday</option>
-            </select>
+                <br>
+                <br>
+                <label for="date">Please specify the specific date:</label>
 
-            <br>
-            <br>
-            <label for="date">Please specify the specific date:</label>
+                <input type="date" id="date" name="date">
 
-            <input type="date" id="date" name="date">
-            
-            <br>
-            <br>
-            <label for="category">Choose a category to write about:</label>
-            <input list="category-list" id="category" name="category" />
+                <br>
+                <br>
+                <label for="category">Choose a category to write about:</label>
+                <input list="category-list" id="category" name="category" />
 
-            <datalist id="category-list">
-                <option value="Summary">
-                <option value="Accomplishments">
-                <option value="To-Do Next">
-                <option value="Snippets about the day">
-            </datalist>
+                <datalist id="category-list">
+                    <option value="Summary">
+                    <option value="Accomplishments">
+                    <option value="To-Do Next">
+                    <option value="Snippets about the day">
+                </datalist>
 
-            <br>
-            <br>
+                <br>
+                <br>
 
-            <label for="write-category">Write about the chosen category:</label>
+                <label for="write-category">Write about the chosen category:</label>
 
-            <textarea id="write-category" name="write-category"
-                    rows="5" cols="33">
-            
-            </textarea>
+                <textarea id="write-category" name="write-category"
+                        rows="5" cols="33">
 
-            <br>
-            <br>
+                </textarea>
 
-            <button class="category submission"
-                type="button">
-                Submit category
-            </button>
+                <br>
+                <br>
 
-            <br>
-            <br>
+                <button class="category submission"
+                    type="button">
+                    Submit category
+                </button>
 
-            <fieldset>
-                <legend>Was this form easy to fill out and follow? </legend>
-            
-                <input type="radio" id="yes-button" name="button">
-                <label>Yes</label><br/>
-            
-                <input type="radio" id="no-button" name="button">
-                <label>No</label><br/>
-            </fieldset>
+                <br>
+                <br>
 
-            <fieldset>
-                <legend>On which days do you usually log your entries? </legend>
-            
-                <input type="checkbox" id="Sunday-button" name="button">
-                <label>Sunday</label><br/>
-                
-                <input type="checkbox" id="Monday-button" name="button">
-                <label>Monday</label><br/>
-                
-                <input type="checkbox" id="Tuesday-button" name="button">
-                <label>Tuesday</label><br/>
-                
-                <input type="checkbox" id="Wednesday-button" name="button">
-                <label>Wednesday</label><br/>
-                
-                <input type="checkbox" id="Thursday-button" name="button">
-                <label>Thursday</label><br/>
-                
-                <input type="checkbox" id="Friday-button" name="button">
-                <label>Friday</label><br/>
-                
-                <input type="checkbox" id="Saturday-button" name="button">
-                <label>Saturday</label><br/>
-                
-                
-            </fieldset>
+                <fieldset>
+                    <legend>Was this form easy to fill out and follow? </legend>
 
-            <button class="survey submission"
-                type="button">
-                Submit feedback
-            </button>
-            <br>
-            <br>
-            <br>
-            <br>
+                    <input type="radio" id="yes-button" name="button">
+                    <label>Yes</label><br/>
 
-            <button class="entry submission"
-                type="button">
-                Submit Journal Entry
-            </button>
-        </form>
+                    <input type="radio" id="no-button" name="button">
+                    <label>No</label><br/>
+                </fieldset>
 
+                <fieldset>
+                    <legend>On which days do you usually log your entries? </legend>
+
+                    <input type="checkbox" id="Sunday-button" name="button">
+                    <label>Sunday</label><br/>
+
+                    <input type="checkbox" id="Monday-button" name="button">
+                    <label>Monday</label><br/>
+
+                    <input type="checkbox" id="Tuesday-button" name="button">
+                    <label>Tuesday</label><br/>
+
+                    <input type="checkbox" id="Wednesday-button" name="button">
+                    <label>Wednesday</label><br/>
+
+                    <input type="checkbox" id="Thursday-button" name="button">
+                    <label>Thursday</label><br/>
+
+                    <input type="checkbox" id="Friday-button" name="button">
+                    <label>Friday</label><br/>
+
+                    <input type="checkbox" id="Saturday-button" name="button">
+                    <label>Saturday</label><br/>
+
+
+                </fieldset>
+
+                <button class="survey submission"
+                    type="button">
+                    Submit feedback
+                </button>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <button class="entry submission"
+                    type="button">
+                    Submit Journal Entry
+                </button>
+            </form>
+        </section>
           <br><br><br>
 
         <footer>
