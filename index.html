@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <title>Journal_Entries</title>
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <meta name = "Jounral" content = "Jounral Entries" />
     </head>
+    
+    <style>
+        main:hover{
+            color:rgb(0, 112, 0);
+        }
+        .box1:active{
+            background-color:white;
+        }
+    </style>
+    
     <body>
+        <div class="box1">
+            <header class="page-header">
+                <h1>Journal Entries!</h1>
+            </header>
+        </div>
         
-        <header class="page-header">
-            <h1>Journal Entries!</h1>
-        </header>
 
         <main role="main">
             <p> Hello! My name is Salwan Shathar, and welcome to my <b>journal entries</b>. This webpage will include my journal entries for <em>Monday, Tuesday, and Wednesday</em>.</p>
@@ -26,45 +42,56 @@
         </nav>
 
         <section id="mon">
-            <div><h2>Journal Entry: Monday -- 4/5/2021</h2></div>
+            <div class="display1"><h2>Journal Entry: Monday -- 4/5/2021</h2></div>
             <h3>Summary of the Day</h3>
-            <p>
-                I slept in this morning since I have been exhausted the previous days, always waking up early. 
-                <br>Had breakfast and attended my lectures. 
-                <br>Worked on homework until I held my tutoring session. 
-                <br>My eyes were very sore and dry after a full day of screen time (downside of virtual life), so I practiced some music. 
-                <br>I had dinner, watched some Naruto, and headed to sleep.
-            </p>
+            <div class="display">
+                <p>
+                    I slept in this morning since I have been exhausted the previous days, always waking up early. 
+                    <br>Had breakfast and attended my lectures. 
+                    <br>Worked on homework until I held my tutoring session. 
+                    <br>My eyes were very sore and dry after a full day of screen time (downside of virtual life), so I practiced some music. 
+                    <br>I had dinner, watched some Naruto, and headed to sleep.
+                </p>
+            </div>
+            
             
             <hr>
 
-            <h3>Accomplishments of the Day</h3>
-            <ul>
-                <li> Finished my ECE 65 Lab </li>
-                <li> Held a successful tutoring session <i>(Helped a student with understanding the unit circle)</i> </li>
-                <li> Practiced violin </li>
-                <li> Worked out my chest and shoulders </li>
-            </ul>
+            <div class="container">
+                <h3>Accomplishments of the Day</h3>
+                <ul>
+                    <li> Finished my ECE 65 Lab </li>
+                    <li> Held a successful tutoring session <i>(Helped a student with understanding the unit circle)</i> </li>
+                    <li> Practiced violin </li>
+                    <li> Worked out my chest and shoulders </li>
+                </ul>
+            </div>
+            
 
             <hr>
-            <h3>To-do Next</h3>
-            <ol>
-                <li> <strong>CSE140 HW</strong>  </li>
-                <li> Look for houses on the market </li>
-                <li> <strong>Hold Tutoring Session</strong> </li>
-                <li> Attend Lectures </li>
-            </ol>
+            
+            <div class="container2">
+                <h3>To-do Next</h3>
+                <ol>
+                    <li> <strong>CSE140 HW</strong>  </li>
+                    <li> Look for houses on the market </li>
+                    <li> <strong>Hold Tutoring Session</strong> </li>
+                    <li> Attend Lectures </li>
+                </ol>
+            </div>
 
             <hr>
             <h3>Snippets About the Day</h3>
-            <p> For my violin practice session, I rehearsed the piece Sadness and Sorrow from Naruto. With piano accompaniment, the piece turned out pretty great.  </p>
-            
-            <audio controls src="Media/Sadness_and_Sorrow.mp3"> </audio>
-            <p>Here's a picture I took of the violin after my session. My photography skills aren't that great lol</p>
-            
-            <img width="400"
-                src="Media/violin.jpg"
-                alt="Violin Photo">
+            <div class="display">
+                <p> For my violin practice session, I rehearsed the piece Sadness and Sorrow from Naruto. With piano accompaniment, the piece turned out pretty great.  </p>
+                
+                <audio controls src="Media/Sadness_and_Sorrow.mp3"> </audio>
+                <p>Here's a picture I took of the violin after my session. My photography skills aren't that great lol</p>
+                
+                <img width="400" style="position:relative; left: 20px;"
+                    src="Media/violin.jpg"
+                    alt="Violin Photo">
+            </div>
             
             <hr>
         </section>
@@ -72,46 +99,56 @@
         <section id="tue">
             <div><h2>Journal Entry: Tuesday -- 4/6/2021</h2></div>
             <h3>Summary of the Day</h3>
-            <p>
-                I slept in this morning again because I felt like it lol. 
-                <br>Had breakfast and attended my lectures as usual. I was disappointed the CSE110 project wasn't revealed.
-                <br>Worked on homework until I held my tutoring session. 
-                <br>My eyes were very sore and dry after a full day of screen time again, so I practiced some music again. 
-                <br>I had dinner, watched Youtube, and headed to sleep.
-            </p>
+            <div class="display">
+                <p>
+                    I slept in this morning again because I felt like it lol. 
+                    <br>Had breakfast and attended my lectures as usual. I was disappointed the CSE110 project wasn't revealed.
+                    <br>Worked on homework until I held my tutoring session. 
+                    <br>My eyes were very sore and dry after a full day of screen time again, so I practiced some music again. 
+                    <br>I had dinner, watched Youtube, and headed to sleep.
+                </p>
+            </div>
             
             <hr>
 
-            <h3>Accomplishments of the Day</h3>
-            <ul>
-                <li> Finished my CSE140 homework </li>
-                <li> Watched the recorded lecture for Friday for ECE65 </li>
-                <li> Held a successful tutoring session <i>(Helped a student with understanding how to solve polynomials of higher degrees)</i> </li>
-                <li> Practiced oud </li>
-            </ul>
+            <div class="container">
+                <h3>Accomplishments of the Day</h3>
+                <ul>
+                    <li> Finished my CSE140 homework </li>
+                    <li> Watched the recorded lecture for Friday for ECE65 </li>
+                    <li> Held a successful tutoring session <i>(Helped a student with understanding how to solve polynomials of higher degrees)</i> </li>
+                    <li> Practiced oud </li>
+                </ul>
+            </div>
+            
 
             <hr>
-            <h3>To-do Next</h3>
-            <ol>
-                <li> <strong>CSE140L Lab</strong>  </li>
-                <li> <strong>CSE110 Lab</strong>  </li>
-                <li> Look for houses on the market </li>
-                <li> <strong>Hold Tutoring Session</strong> </li>
-                <li> Attend Lectures </li>
-            </ol>
+            <div class="container2">
+                <h3>To-do Next</h3>
+                <ol>
+                    <li> <strong>CSE140L Lab</strong>  </li>
+                    <li> <strong>CSE110 Lab</strong>  </li>
+                    <li> Look for houses on the market </li>
+                    <li> <strong>Hold Tutoring Session</strong> </li>
+                    <li> Attend Lectures </li>
+                </ol>
+            </div>
 
             <hr>
             <h3>Snippets About the Day</h3>
-            While going through my media folder, I stumbled upon a video which demoed an FPS game I was working on during summer and have forgotten about. 
-            <br>It was cool to look back at it. Maybe I'll get back to finishing it, but definitely not right now.
-            <figure>
-                <video controls width="400">
+            <div class="display">
+                While going through my media folder, I stumbled upon a video which demoed an FPS game I was working on during summer and have forgotten about. 
+                <br>It was cool to look back at it. Maybe I'll get back to finishing it, but definitely not right now.
+                <figure>
+                    <video controls width="400"  style="
+                    position: static;">
 
-                    <source src="Media/Unity_FPS.mp4"
-                            type="video/mp4">
-                
-                </video>
-            </figure> 
+                        <source src="Media/Unity_FPS.mp4"
+                                type="video/mp4">
+                    
+                    </video>
+                </figure> 
+            </div>
             
         
         </section>
@@ -119,49 +156,58 @@
         <section id="wed">
             <div><h2>Journal Entry: Wednesday -- 4/7/2021</h2></div>
             <h3>Summary of the Day</h3>
-            <p>
-                I slept in this morning yet again. 
-                <br>Had breakfast and attended my lectures as usual, again.
-                <br>Had to pick up my mom and check up on some houses we found the past couple of days
-                <br>I got my COVID vaccination, which was very spontaneous.
-                <br>Busted out the CSE110 lab. 
-                <br>I had dinner, started Attack on Titans, and headed to sleep.
-            </p>
+            <div class="display">
+                <p>
+                    I slept in this morning yet again. 
+                    <br>Had breakfast and attended my lectures as usual, again.
+                    <br>Had to pick up my mom and check up on some houses we found the past couple of days
+                    <br>I got my COVID vaccination, which was very spontaneous.
+                    <br>Busted out the CSE110 lab. 
+                    <br>I had dinner, started Attack on Titans, and headed to sleep.
+                </p>
+            </div>
             
             <hr>
 
-            <h3>Accomplishments of the Day</h3>
-            <ul>
-                <li> Finished my CSE110 Lab </li>
-                <li> Checked some houses in the area </li>
-                <li> Got vaccinated for COVID </li>
-                <li> Started Attack on Titans </li>
-            </ul>
+            <div class="container">
+                <h3>Accomplishments of the Day</h3>
+                <ul>
+                    <li> Finished my CSE110 Lab </li>
+                    <li> Checked some houses in the area </li>
+                    <li> Got vaccinated for COVID </li>
+                    <li> Started Attack on Titans </li>
+                </ul>
+            </div>
 
             <hr>
-            <h3>To-do Next</h3>
-            <ol>
-                <li> <strong>CSE140L Lab</strong>  </li>
-                <li> Look for houses on the market </li>
-                <li> <strong>Hold Tutoring Session</strong> </li>
-                <li> Attend Lectures </li>
-            </ol>
+
+            <div class="container2">
+                <h3>To-do Next</h3>
+                <ol>
+                    <li> <strong>CSE140L Lab</strong>  </li>
+                    <li> Look for houses on the market </li>
+                    <li> <strong>Hold Tutoring Session</strong> </li>
+                    <li> Attend Lectures </li>
+                </ol>
+            </div>
 
             <hr>
             <h3>Snippets About the Day</h3>
             
-            <p>I watched almost all of the <a href="https://youtu.be/lbgcfpaoeek">8-hour freestyle stream</a> by my current favorite artist, Harry Mack. He freestyled 8 hours straight to celebrate his 800k sub count on youtube.
-                <br> I also found this cool video, which absolutely blew my mind: <a href="https://youtu.be/dQw4w9WgXcQ">https://youtu.be/dQw4w9WgXcQ</a>
-            </p>
-
-            <p>
-                Here's a riddle I found:
-                <br>
-            </p>
-            <details>
-                <summary> How many times can you subtract the number 5 from 25? </summary>
-                Once, because after you subtract it's not 25 anymore.
-            </details>
+            <div class="display">
+                <p>I watched almost all of the <a href="https://youtu.be/lbgcfpaoeek">8-hour freestyle stream</a> by my current favorite artist, Harry Mack. He freestyled 8 hours straight to celebrate his 800k sub count on youtube.
+                    <br> I also found this cool video, which absolutely blew my mind: <a href="https://youtu.be/dQw4w9WgXcQ">https://youtu.be/dQw4w9WgXcQ</a>
+                </p>
+    
+                <p>
+                    Here's a riddle I found:
+                    <br>
+                </p>
+                <details>
+                    <summary> How many times can you subtract the number 5 from 25? </summary>
+                    Once, because after you subtract it's not 25 anymore.
+                </details>
+            </div>
 
         </section>
 
@@ -169,7 +215,7 @@
         
         <section id="entry">
             <h2>Create an Entry!</h2>
-
+            <br>
             <form>
                 <label for="name">Please enter your name:</label>
 
@@ -221,7 +267,7 @@
                 <br>
                 <br>
 
-                <button class="category submission"
+                <button class="category-submission"
                     type="button">
                     Submit category
                 </button>
